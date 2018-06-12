@@ -1,14 +1,3 @@
-
-// Your job is to create an object that represents a financial advisor and has the following properties and methods.
-
-
-
-// Sell (non-enumerable, method) - This method takes a stock ticker symbol, a quantity, and a price as arguments
-// When sell() or purchase() are invoked, then the stock portfolio should be modified accordingly. 
-
-// When you invoke the worth() method, it should look at every transaction and calculate the advisor's net worth.
-
-
 const financialAdvisor = Object.create({}, {
     company: {
         value: "NSS",
@@ -79,7 +68,8 @@ const financialAdvisor = Object.create({}, {
     },
 })
 
-financialAdvisor.purchase("HELLO", 10, 20);
+financialAdvisor.purchase("BUY", 10, 20);
+financialAdvisor.sell("SELL", 25, 50);
 
 
 console.log(financialAdvisor.worth())
